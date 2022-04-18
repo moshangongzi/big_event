@@ -23,6 +23,7 @@ function getUserInfo() {
             if (res.status !== 0) {
                 return layer.msg('获取用户信息失败')
             }
+            console.log(res);
             // 头像渲染
             renderAvatar(res.data)
         }
